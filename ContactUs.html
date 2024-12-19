@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculators LTD</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<header>
+    <img src="Assets/Logo.jpg">
+    <h1>Calculators LTD</h1>
+</header>
+<nav class="navbar navbar-expand-sm bg-light navbar-light">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!--The below is for the links shown when burger button is clicked-->
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="Gallery.html">Gallery</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="ContactUs.html">Contact us</a>
+            </li>    
+        </ul>
+    </div>
+</nav>
+<body> 
+    <div id="ContactUs">
+        <label>Full Name</label>
+        <br>
+        <input type="text" placeholder="Insert Full Name" id="name">
+        <br>
+        <label>Email</label>
+        <br>
+        <input type="email" placeholder="Insert Full Email" id="email">
+        <br>
+        <label>Mobile Number</label>
+        <br>
+        <input type="number" placeholder="Insert Mobile Number" id="number">
+        <br>
+        <lable>Comment</lable>
+        <br>
+        <textarea placeholder="Write comment here..." id="comment"></textarea>
+        <br>
+        <button onclick="validateForm()">Send</button>
+    </div>
+</body>
+<footer>
+    <p>&copy;Neil Formosa 2023</p>
+</footer>
+</html>
